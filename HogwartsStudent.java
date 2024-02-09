@@ -3,6 +3,7 @@ public class HogwartsStudent extends Student implements HogwartsPerson {
   public House house;
   public boolean prefect;
   public String[] teams;
+  
 
   public HogwartsStudent(
     House house,
