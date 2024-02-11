@@ -40,6 +40,15 @@ public class HogwartsTeacher extends Teacher {
     this.headOfHouse = false;
   }
 
+  public HogwartsTeacher(HogwartsTeacher hogwartsTeacher) {
+    this.house = hogwartsTeacher.house;
+    setFullName(hogwartsTeacher.getFullName());
+    this.employment = hogwartsTeacher.employment;
+    this.employmentStart = hogwartsTeacher.employmentStart;
+    this.employmentEnd = hogwartsTeacher.employmentEnd;
+    this.headOfHouse = hogwartsTeacher.headOfHouse;
+  }
+
   public HogwartsTeacher() {
     this.house = null;
     this.headOfHouse = false;

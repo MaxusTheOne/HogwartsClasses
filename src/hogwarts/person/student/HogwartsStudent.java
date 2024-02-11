@@ -8,7 +8,30 @@ public class HogwartsStudent extends Student implements HogwartsPerson {
   public House house;
   public boolean prefect;
   public String[] teams;
-  
+
+  public House getHouse() {
+    return house;
+  }
+
+  public void setHouse(House house) {
+    this.house = house;
+  }
+
+  public boolean isPrefect() {
+    return prefect;
+  }
+
+  public void setPrefect(boolean prefect) {
+    this.prefect = prefect;
+  }
+
+  public String[] getTeams() {
+    return teams;
+  }
+
+  public void setTeams(String[] teams) {
+    this.teams = teams;
+  }
 
   public HogwartsStudent(
     House house,
@@ -32,5 +55,15 @@ public class HogwartsStudent extends Student implements HogwartsPerson {
     this.enrollmentYear = 0;
     this.graduationYear = 0;
     this.graduated = false;
+  }
+
+  public HogwartsStudent(HogwartsStudent student){
+    this.house = student.getHouse();
+    this.prefect = student.isPrefect();
+    this.teams = student.getTeams();
+    setFullName(student.getFullName());
+    this.enrollmentYear = student.getEnrollmentYear();
+    this.graduationYear = student.getGraduationYear();
+    this.graduated = student.isGraduated();
   }
 }
