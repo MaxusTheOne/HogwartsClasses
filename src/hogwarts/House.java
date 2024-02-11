@@ -1,3 +1,5 @@
+package src.hogwarts;
+
 public class House {
 
   public String name;

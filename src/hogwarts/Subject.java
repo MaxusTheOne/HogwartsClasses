@@ -1,3 +1,5 @@
+package src.hogwarts;
+
 public class Subject {
 
   public String name;

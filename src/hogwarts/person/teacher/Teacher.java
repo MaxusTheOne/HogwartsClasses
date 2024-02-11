@@ -1,3 +1,7 @@
+package src.hogwarts.person.teacher;
+
+import src.hogwarts.person.Person;
+
 import java.util.Date;
 
 public class Teacher extends Person {

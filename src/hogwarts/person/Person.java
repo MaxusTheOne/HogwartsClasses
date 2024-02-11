@@ -1,3 +1,5 @@
+package src.hogwarts.person;
+
 public class Person {
 
   public String firstName;

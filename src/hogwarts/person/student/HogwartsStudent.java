@@ -1,3 +1,8 @@
+package src.hogwarts.person.student;
+
+import src.hogwarts.House;
+import src.hogwarts.person.HogwartsPerson;
+
 public class HogwartsStudent extends Student implements HogwartsPerson {
 
   public House house;

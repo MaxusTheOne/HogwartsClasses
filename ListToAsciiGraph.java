@@ -68,7 +68,7 @@ public class ListToAsciiGraph {
         // Reverse the graph
         StringBuilder result = new StringBuilder();
 
-
+        return "";
     }
 
     public static void main(String[] args) {

@@ -1,4 +1,12 @@
+package src;
+
 import java.util.Date;
+import src.hogwarts.House;
+import src.hogwarts.Subject;
+import src.hogwarts.person.student.HogwartsStudent;
+import src.hogwarts.person.teacher.HogwartsTeacher;
+import src.hogwarts.person.teacher.Teacher;
+
 
 public class Test {
 
@@ -17,7 +25,7 @@ public class Test {
     System.out.println(students[2].getFullName());
     System.out.println(students[3].getFullName());
     // Init 2 teachers
-    // syntax:  House house, String fullName, EmpType employment, Date employmentStart, Date employmentEnd
+    // syntax:  src.hogwarts.House house, String fullName, EmpType employment, Date employmentStart, Date employmentEnd
     Teacher snape = new HogwartsTeacher(
       gryffindor,
       "Severus Snape",
@@ -41,7 +49,7 @@ public class Test {
     //POTIONS
     // Instance a new class for the subject Potions
     Subject potions = new Subject("Potions", 3, false);
-    System.out.println("Subject instance: " + potions.getName());
+    System.out.println("src.hogwarts.Subject instance: " + potions.getName());
   }
 
   public static void main(String[] args) {

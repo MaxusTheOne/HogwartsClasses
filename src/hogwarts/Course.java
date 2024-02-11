@@ -1,27 +1,32 @@
+package src.hogwarts;
+
+import src.hogwarts.person.student.Student;
+import src.hogwarts.person.teacher.Teacher;
+
 public class Course {
 
   public Subject subject;
   public Teacher teacher;
   public Student[] students;
-  public TeachingMaterial[] materials;
+
 
   public Course(
     Subject subject,
     Teacher teacher,
-    Student[] students,
-    TeachingMaterial[] materials
+    Student[] students
+
   ) {
     this.subject = subject;
     this.teacher = teacher;
     this.students = students;
-    this.materials = materials;
+
   }
 
   public Course() {
     this.subject = new Subject();
     this.teacher = new Teacher();
     this.students = new Student[0];
-    this.materials = new TeachingMaterial[0];
+
   }
 
   public void addStudent(Student student) {

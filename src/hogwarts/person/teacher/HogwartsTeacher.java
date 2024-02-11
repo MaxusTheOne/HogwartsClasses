@@ -1,9 +1,29 @@
+package src.hogwarts.person.teacher;
+
+import src.hogwarts.House;
+
 import java.util.Date;
 
 public class HogwartsTeacher extends Teacher {
 
   public House house;
-  public boolean headOfHouse;
+  public boolean headOfHouse = false;
+
+  public House getHouse() {
+    return house;
+  }
+
+  public void setHouse(House house) {
+    this.house = house;
+  }
+
+  public boolean isHeadOfHouse() {
+    return headOfHouse;
+  }
+
+  public void setHeadOfHouse(boolean headOfHouse) {
+    this.headOfHouse = headOfHouse;
+  }
 
   public HogwartsTeacher(
     House house,

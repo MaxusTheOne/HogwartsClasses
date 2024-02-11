@@ -1,3 +1,7 @@
+package src.hogwarts.person.student;
+
+import src.hogwarts.person.Person;
+
 public class Student extends Person {
 
   protected int enrollmentYear;
