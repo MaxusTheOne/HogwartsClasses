@@ -63,6 +63,14 @@ public class ListToAsciiGraph {
 }
         return result.toString();
     }
+
+    public String ReverseGraph(int[] list, int longestLine){
+        // Reverse the graph
+        StringBuilder result = new StringBuilder();
+
+
+    }
+
     public static void main(String[] args) {
         ListToAsciiGraph listToAsciiGraph = new ListToAsciiGraph();
         listToAsciiGraph.start();
